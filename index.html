@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Today I Learned — share and discover interesting facts, backed by real sources."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+    <title>Today I Learned!</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img
+            src="logo.png"
+            height="68"
+            width="68"
+            alt="Today I Learned Logo"
+          />
+          <h1>Today I Learned</h1>
+        </div>
+
+        <button class="btn btn-large btn-open">Share a fact</button>
+      </header>
+
+      <form class="fact-form hidden">
+        <input
+          type="text"
+          placeholder="Share a fact with the world..."
+          maxlength="200"
+          class="input-text"
+        />
+        <span class="char-count">200</span>
+        <input
+          type="text"
+          placeholder="Trustworthy source..."
+          class="input-source"
+        />
+        <select class="input-category">
+          <option value="">Choose category:</option>
+        </select>
+        <button class="btn btn-large btn-submit">Post</button>
+      </form>
+
+      <main class="main">
+        <aside>
+          <ul class="categories-list">
+            <li class="category">
+              <button class="btn btn-all-categories btn-active">All</button>
+            </li>
+          </ul>
+        </aside>
+
+        <section>
+          <p class="message hidden"></p>
+          <ul class="facts-list"></ul>
+          <p class="facts-count"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
